@@ -77,6 +77,8 @@ class RAM:
                 # Add more registers if neccesary. (Lazy approach but it works)
                 self.reg_file.append(0)
         self.program_counter += 1
+        if self.program_counter == len(self.program):
+            self.finished = True
 
     def deref(self, i, n):
         for _ in range(n):
