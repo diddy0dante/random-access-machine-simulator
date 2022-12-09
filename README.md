@@ -21,6 +21,6 @@ My Specific implementation has ten instructions, although seemingly too many. I 
 - `print s`: Print `s`. If `s` is an integer, it can be dereferenced.
 - `pcpu`: "print cpu". Print the value of the CPU.
 
-`load`, `store`, `add`, `sub`, and `print` support dereferencing their arguments with `*`. `ldcpu` and both prints are not required for Turing completeness. In this specific implementation a halt is required at the end of each program, so that keyword is not optional.
+`load`, `store`, `add`, `sub`, and `print` support dereferencing their arguments with `*`. `ldcpu`, `halt`, and both prints are not required for Turing completeness. For elaboration on halt: The simulator stops automatically at the end of the program.
 
 Any text behind a `#` is ignored, and any whitespace preceding and following an instruction is ignored, so code may be indented and commented with `#`. Furthermore, empty lines are also ignored. 
