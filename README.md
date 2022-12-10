@@ -2,7 +2,7 @@
 This is a simulator for a random-access machine (RAM), implemented in Python.
 
 ## Random-Access Machines
-Not to be confused with Random Access _Memory_, a random-access machines is a conceptual register machine. You could think of it like an abstract computer that reads assembly-like language. You can read about them [on Wikipedia](https://en.wikipedia.org/wiki/Random-access_machine).
+Not to be confused with Random Access _Memory_, a random-access machine is a conceptual register machine. You could think of it like an abstract computer that reads assembly-like language. You can read about them [on Wikipedia](https://en.wikipedia.org/wiki/Random-access_machine).
 
 ## This implementation
 My Specific implementation has ten instructions, although seemingly too many. I found some very useful when I originally needed to make this. Any The instructions are as follows:
