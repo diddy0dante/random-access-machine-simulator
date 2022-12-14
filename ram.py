@@ -35,7 +35,7 @@ class RAM:
                 'load':  self.load,  'ldcp': self.ldcp, 'store': self.store,
                 'add':   self.add,   'sub':  self.sub,  'halt':  self.halt,
                 'jump':  self.jump,  'jgtz': self.jgtz,
-                'print': self.print, 'pcpu': self.pcpu
+                'print': self.print, 'pcpu': self.pcpu, 'preg': self.preg
             }
             instr_s = instr_s.lower()
             if instr_s[-1] == ':':
@@ -120,6 +120,9 @@ class RAM:
 
     def pcpu(self, *_):
         print(self.cpu)
+
+    def preg(self, *_):
+        print(self.reg_file)
 
 if __name__ == '__main__':
     import sys
