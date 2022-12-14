@@ -109,7 +109,7 @@ class RAM:
         self.program_counter = self.jump_flags[a]
 
     def jgtz(self, a, _):
-        if self.cpu != 0:
+        if self.cpu > 0:
             self.program_counter = self.jump_flags[a]
 
     def print(self, s, n):
